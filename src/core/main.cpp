@@ -1,10 +1,17 @@
-#include "window.cpp"
+#include "core.cpp"
+
+class test : public vCore::window {
+public:
+test() {
+createWindow();
+}
+};
+
 int main() {
 bool running=1;
-vCore::window w;
-w.createWindow();
+test t;
 while(running)
 {
-running=w.update();
+running=t.update();
 }
 }

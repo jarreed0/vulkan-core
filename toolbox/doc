@@ -1,0 +1,5 @@
+cd src/core/
+doxygen dconfig* > /dev/null
+cd ../../docs/latex
+make > /dev/null
+cd ..

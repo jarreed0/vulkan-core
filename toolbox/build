@@ -1,0 +1,9 @@
+sudo mkdir -p /usr/include/vcore/
+cd src/core/
+g++ -c -fPIC *.cpp -std=c++11
+gcc -shared *.o -o bin/vcore.so
+#ar rcs bin/vcore.a *.o
+cat *.h > bin/vcore.h
+sudo cp bin/vcore.so /usr/lib/libvcore.so
+sudo cp *.h /usr/include/vcore/
+sudo cp bin/vcore.h /usr/include/vcore/

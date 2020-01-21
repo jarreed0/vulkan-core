@@ -1,2 +1,3 @@
 g++ sandbox/*.cpp -lvcore -lglfw -lvulkan -lGL -o sandbox/VulkanTest
 ./sandbox/VulkanTest
+rm sandbox/VulkanTest

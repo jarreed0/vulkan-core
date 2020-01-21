@@ -7,3 +7,4 @@ cat *.h > bin/vcore.h
 sudo cp bin/vcore.so /usr/lib/libvcore.so
 sudo cp *.h /usr/include/vcore/
 sudo cp bin/vcore.h /usr/include/vcore/
+mv *.o bin

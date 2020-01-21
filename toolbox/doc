@@ -1,5 +1,8 @@
+./toolbox/version
+cp docs/dconfig src/core/dconfig
 cd src/core/
 doxygen dconfig* > /dev/null
+rm dconfig
 cd ../../docs/latex
 make > /dev/null
 cd ..

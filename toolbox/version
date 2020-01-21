@@ -1,0 +1,12 @@
+MONTH=$(date -d "$D" '+%m')
+YEAR=$(date -d "$D" '+%Y')
+CYEAR=${YEAR:(-2)}
+#echo "v"$CYEAR"."$MONTH
+
+VAR="# vulkan-core v"$CYEAR"."$MONTH
+sed -i "1s/.*/$VAR/" README.md
+
+VAR2="PROJECT_NUMBER         = v"$CYEAR"."$MONTH
+sed -i "41s/.*/$VAR2/" docs/dconfig
+
+

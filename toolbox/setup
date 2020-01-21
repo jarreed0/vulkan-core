@@ -1,1 +1,1 @@
-sudo apt install libglm-dev libglfw3 libxcb1-dev xorg-dev libvulkan-dev doxygen
+sudo apt install libglm-dev libglfw3 libxcb1-dev xorg-dev libvulkan-dev doxygen libgl1-mesa-glx

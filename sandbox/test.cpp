@@ -6,15 +6,19 @@ bool running;
 public:
 test() {}
 void run() {
-createWindow();
+bool created = createWindow();
+if(created) vCore::success("Window Created!");
+if(!created) vCore::error("Failed to create window.");
 running=1;
 while(running) {
 running=update();
 }
+vCore::log("Exiting..");
 }
 };
 
 int main() {
+vCore::log("Creating Object.");
 test t;
 t.run();
 }

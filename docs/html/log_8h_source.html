@@ -93,48 +93,55 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">https://stackoverflow.com/questions/2616906/how-do-i-output-coloured-text-to-a-linux-terminal</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>vCore { <span class="comment">//class logger {</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacevCore.html">vCore</a> { <span class="comment">//class logger {</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> log(T a) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; std::cout &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> error(T a) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;31m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> debug(T a) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;34m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> warning(T a) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;43m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> success(T a) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;32m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacevCore.html#a1d33e6c5af437430d6b151109ca372a9">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacevCore.html#a1d33e6c5af437430d6b151109ca372a9">log</a>(T a) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; std::cout &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacevCore.html#ad74e82d5eef67eac3e20c526c6f3ae12">   38</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacevCore.html#ad74e82d5eef67eac3e20c526c6f3ae12">error</a>(T a) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;31m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="namespacevCore.html#ab6a64e7693580e9f9684852e29b7b90e">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacevCore.html#ab6a64e7693580e9f9684852e29b7b90e">debug</a>(T a) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;34m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespacevCore.html#a85a935c44e1d484f6dcaad685ce9fd01">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacevCore.html#a85a935c44e1d484f6dcaad685ce9fd01">warning</a>(T a) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;43m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">void</span> notice(T a) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;37m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="namespacevCore.html#a03d77eb7419f52f288fd8e007b6ff0e1">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacevCore.html#a03d77eb7419f52f288fd8e007b6ff0e1">success</a>(T a) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;32m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">void</span> log(T a, <span class="keywordtype">int</span> x) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;&quot;</span> &lt;&lt; x&lt;&lt; <span class="stringliteral">&quot;m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//}; }</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif //LOG_H</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespacevCore.html#aceba240aaffe95f0f31b59b692b703e0">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacevCore.html#aceba240aaffe95f0f31b59b692b703e0">notice</a>(T a) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;37m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="namespacevCore.html#ab901884db0eb455d6b05e8a3bd2f8402">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacevCore.html#a1d33e6c5af437430d6b151109ca372a9">log</a>(T a, <span class="keywordtype">int</span> x) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; std::cout &lt;&lt; <span class="stringliteral">&quot;\033[1;&quot;</span> &lt;&lt; x&lt;&lt; <span class="stringliteral">&quot;m&quot;</span> &lt;&lt; a &lt;&lt; <span class="stringliteral">&quot;\033[0m\n&quot;</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//}; }</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif //LOG_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="anamespacevCore_html_a03d77eb7419f52f288fd8e007b6ff0e1"><div class="ttname"><a href="namespacevCore.html#a03d77eb7419f52f288fd8e007b6ff0e1">vCore::success</a></div><div class="ttdeci">void success(T a)</div><div class="ttdoc">Display Success In Green.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00056">log.h:56</a></div></div>
+<div class="ttc" id="anamespacevCore_html_ad74e82d5eef67eac3e20c526c6f3ae12"><div class="ttname"><a href="namespacevCore.html#ad74e82d5eef67eac3e20c526c6f3ae12">vCore::error</a></div><div class="ttdeci">void error(T a)</div><div class="ttdoc">Display Error In Red.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00038">log.h:38</a></div></div>
+<div class="ttc" id="anamespacevCore_html_aceba240aaffe95f0f31b59b692b703e0"><div class="ttname"><a href="namespacevCore.html#aceba240aaffe95f0f31b59b692b703e0">vCore::notice</a></div><div class="ttdeci">void notice(T a)</div><div class="ttdoc">Display Notice In White.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00062">log.h:62</a></div></div>
+<div class="ttc" id="anamespacevCore_html_ab6a64e7693580e9f9684852e29b7b90e"><div class="ttname"><a href="namespacevCore.html#ab6a64e7693580e9f9684852e29b7b90e">vCore::debug</a></div><div class="ttdeci">void debug(T a)</div><div class="ttdoc">Display Debug Message In Blue.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00044">log.h:44</a></div></div>
+<div class="ttc" id="anamespacevCore_html_a85a935c44e1d484f6dcaad685ce9fd01"><div class="ttname"><a href="namespacevCore.html#a85a935c44e1d484f6dcaad685ce9fd01">vCore::warning</a></div><div class="ttdeci">void warning(T a)</div><div class="ttdoc">Display Warning Highlighted Yellow.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00050">log.h:50</a></div></div>
+<div class="ttc" id="anamespacevCore_html"><div class="ttname"><a href="namespacevCore.html">vCore</a></div><div class="ttdoc">Namespace Used By Wrapper.</div><div class="ttdef"><b>Definition:</b> <a href="application_8cpp_source.html#l00003">application.cpp:3</a></div></div>
+<div class="ttc" id="anamespacevCore_html_a1d33e6c5af437430d6b151109ca372a9"><div class="ttname"><a href="namespacevCore.html#a1d33e6c5af437430d6b151109ca372a9">vCore::log</a></div><div class="ttdeci">void log(T a)</div><div class="ttdoc">PRINT TO SCREEN.</div><div class="ttdef"><b>Definition:</b> <a href="log_8h_source.html#l00032">log.h:32</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

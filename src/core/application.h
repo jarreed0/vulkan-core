@@ -10,19 +10,21 @@
 
 #include "log.h"
 
+#define VC_WINDOW GLFWwindow
+
 namespace vCore { class Application {
 private:
 	std::string title;
 	int width, height;
-	GLFWwindow* glfwWindow;
+	VC_WINDOW* window;
 	bool open;
 public:
 	Application();
 	~Application();
-	GLFWwindow* createWindow();
-	GLFWwindow* createWindow(std::string s);
-	GLFWwindow* createWindow(int w, int h);
-	GLFWwindow* createWindow(std::string s, int w, int h);
+	VC_WINDOW* createWindow();
+	VC_WINDOW* createWindow(std::string s);
+	VC_WINDOW* createWindow(int w, int h);
+	VC_WINDOW* createWindow(std::string s, int w, int h);
 	void setTitle(std::string t) {title=t;}
 	int getWidth() {return width;}
 	void setWidth(int w) {width=w;}
@@ -32,7 +34,7 @@ public:
 	void destroy();
 	void close() {open=0;destroy();}
 	bool update();
-	GLFWwindow* getWindow() {return glfwWindow;}
+	VC_WINDOW* getWindow() {return window;}
 }; }
 
 #endif //WINDOW_H

@@ -77,32 +77,32 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;open=0;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;destroy();</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;GLFWwindow* Application::createWindow() {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;VC_WINDOW* Application::createWindow() {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordflow">return</span> createWindow(title, width, height);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;GLFWwindow* Application::createWindow(std::string s) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;VC_WINDOW* Application::createWindow(std::string s) {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;setTitle(s);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordflow">return</span> createWindow(title, width, height);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;GLFWwindow* Application::createWindow(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;VC_WINDOW* Application::createWindow(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h) {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;setSize(w, h);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordflow">return</span> createWindow(title, w, h);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;GLFWwindow* Application::createWindow(std::string s, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;VC_WINDOW* Application::createWindow(std::string s, <span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h) {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;setSize(w, h);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;setTitle(s);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;glfwInit();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;glfwWindow = glfwCreateWindow(width, height, title.c_str(), <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordflow">return</span> glfwWindow;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;window = glfwCreateWindow(width, height, title.c_str(), <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordflow">return</span> window;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> Application::destroy() {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;glfwDestroyWindow(glfwWindow);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;glfwDestroyWindow(window);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;glfwTerminate();</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">bool</span> Application::update() {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; <span class="keywordflow">if</span>(glfwWindowShouldClose(glfwWindow)) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; <span class="keywordflow">if</span>(glfwWindowShouldClose(window)) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  close();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; glfwPollEvents();</div>

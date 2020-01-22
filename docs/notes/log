@@ -19,3 +19,6 @@ commited toolbox/revert as added undo last git push option
 Mon 20 Jan 2020 06:36:45 PM MST
 commited docs as examples
 
+Wed 22 Jan 2020 11:23:21 AM MST
+commited src/core/log.h as created logging system
+

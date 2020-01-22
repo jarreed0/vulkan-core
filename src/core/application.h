@@ -8,6 +8,8 @@
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
 
+#include "log.h"
+
 namespace vCore { class Application {
 private:
 	std::string title;

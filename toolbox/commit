@@ -7,4 +7,5 @@ git commit -m "update docs"
 git add README.md
 git commit -m "update readme"
 git push
-./toolbox/log "commited $1 as $2"
+id=$(git rev-parse origin/master)
+./toolbox/log "commited $1 as $2" $id

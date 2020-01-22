@@ -1,3 +1,4 @@
 echo $(date) >> docs/notes/log
 echo $1 >> docs/notes/log
+echo $2 >> docs/notes/log
 echo >> docs/notes/log
